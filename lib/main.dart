@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import '01_animate/02/animate_to_widget.dart';
+import '01_animate/02/animate_switch.dart';
+import '01_animate/03/animate_curves.dart';
+import '01_animate/04/tween_animation_builder.dart';
+import '07_buildcontext/build_contex.dart';
+import 'exercise/06/exercise.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +19,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: TestAnimateWidget(),
+      home: TweenAnimationBuilderExample(),
     );
   }
 }

@@ -154,6 +154,7 @@ class RenderShadowsBox extends RenderProxyBox with DebugOverflowIndicatorMixin {
     print(child.size);
     // 第三参数 可以容纳的尺寸
     // 第四参数 实际child的尺寸
+    // 绘制黄色超出尺寸的警告线
     paintOverflowIndicator(context, offset, offset & size, offset & child.size);
   }
 }
