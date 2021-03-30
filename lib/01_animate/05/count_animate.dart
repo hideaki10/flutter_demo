@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
 
+import 'animated_counter.dart';
+
 class CountAnimate extends StatefulWidget {
   @override
   _TestAnimateContainerState createState() => _TestAnimateContainerState();
 }
 
 class _TestAnimateContainerState extends State<CountAnimate> {
+  int _count = 0;
+
+  void increament() {
+    _count++;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,40 +23,18 @@ class _TestAnimateContainerState extends State<CountAnimate> {
           width: 300,
           height: 120,
           color: Colors.red[200],
-          child: TweenAnimationBuilder(
-            builder: (BuildContext context, dynamic value, Widget child) {
-              print(value);
-              final whole = value ~/ 1;
-              final decimal = value - whole;
-              return Stack(
-                children: [
-                  Positioned(
-                    top: -100 * decimal, // 0 -> -100
-                    child: Opacity(
-                      opacity: 1 - decimal, // 1 -> 0
-                      child: Text(
-                        '$whole',
-                        style: TextStyle(fontSize: 100),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    top: 100 - (100 * decimal), // 100  -> 0
-                    child: Opacity(
-                      opacity: decimal, // 0 -> 1
-                      child: Text(
-                        '${whole + 1}',
-                        style: TextStyle(fontSize: 100),
-                      ),
-                    ),
-                  ),
-                ],
-              );
-            },
+          child: AnimateCounter(
+            value: _count,
             duration: Duration(seconds: 1),
-            tween: Tween(begin: 7.0, end: 10.0),
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            increament();
+          });
+        },
       ),
     );
   }
