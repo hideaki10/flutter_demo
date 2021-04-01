@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_page/temp/temp.dart';
 import '01_animate/02/animate_switch.dart';
 import '01_animate/03/animate_curves.dart';
 import '01_animate/04/tween_animation_builder.dart';
 import '01_animate/05/count_animate.dart';
 import '01_animate/06/show_animated.dart';
 import '01_animate/07/animated_controller.dart';
+import '01_animate/08/animated_tween.dart';
 import '07_buildcontext/build_contex.dart';
 import 'exercise/06/exercise.dart';
 
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: AnimatedController(),
+      home: Temp(),
     );
   }
 }
