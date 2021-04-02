@@ -1,9 +1,11 @@
 
+
+
+[![codecov](https://codecov.io/gh/hideaki10/flutter_demo/branch/main/graph/badge.svg)](https://codecov.io/gh/hideaki10/flutter_demo)
+
 # flutter_page
 
 A new Flutter project.
-[![codecov](https://codecov.io/gh/hideaki10/flutter_demo/branch/main/graph/badge.svg)](https://codecov.io/gh/hideaki10/flutter_demo)
-
 ## Getting Started
 
 This project is a starting point for a Flutter application.
