@@ -1,9 +1,8 @@
 
 # flutter_page
 
-[![Build Status](https://travis-ci.org/codecov/dart.svg?branch=master)](https://travis-ci.org/codecov/dart) [![codecov.io]
-
 A new Flutter project.
+[![codecov](https://codecov.io/gh/hideaki10/flutter_demo/branch/main/graph/badge.svg)](https://codecov.io/gh/hideaki10/flutter_demo)
 
 ## Getting Started
 
