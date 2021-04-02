@@ -45,28 +45,22 @@ class _TestAnimateContainerState extends State<AnimatedTween>
         //显示动画多以transition结尾
         //RotationTransition
         //FadeTransition
-
-        child: SlideTransition(
-          position: Tween(begin: Offset(0, -0.5), end: Offset(0, 0.8))
-              //curve (Interval 动画必须在0。0～0.5之间完成)
-              .chain(CurveTween(curve: Interval(0.8, 1.0)))
-              .animate(animationController),
-          //tween
-          // position: animationController
-          //     .drive(Tween(begin: Offset(0, 0), end: Offset(1, 1))),
-          //tween
-          //scale: animationController.drive(Tween(begin: 0.5, end: 2.0)),
-          child: Container(
-            width: 300,
-            height: 300,
-            color: Colors.red[200],
-          ),
+        child: Column(
+          children: [
+            SlideTransition(
+              position: Tween(begin: Offset(0, -0.5), end: Offset(0, 0.8))
+                  //curve (Interval 动画必须在0。0～0.5之间完成)
+                  .chain(CurveTween(curve: Interval(0.8, 1.0)))
+                  .animate(animationController),
+              //tween
+              // position: animationController
+              //     .drive(Tween(begin: Offset(0, 0), end: Offset(1, 1))),
+              //tween
+              //scale: animationController.drive(Tween(begin: 0.5, end: 2.0)),
+              child: Container(width: 300, height: 300, color: Colors.red[200]),
+            ),
+          ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          animationController.stop();
-        },
       ),
     );
   }

@@ -1,12 +1,25 @@
 import 'package:flutter/material.dart';
 
-class Temp extends StatelessWidget {
-  final List<String> st = ["1", "2", "4"];
+class Temp extends StatefulWidget {
+  @override
+  _TempState createState() => _TempState();
+}
+
+class _TempState extends State<Temp> {
+  final List<String> st = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Listfa(ex: [...st]),
+      body: Listfa(ex: st),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          st.add("a");
+          st.add("value");
+          setState(() {});
+        },
+      ),
     );
   }
 }
