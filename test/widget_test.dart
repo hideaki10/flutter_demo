@@ -14,6 +14,7 @@ void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     print("test");
     print("branch-test");
+    print("branch-test3");
     // Build our app and trigger a frame.
     // await tester.pumpWidget(MyApp());
 
