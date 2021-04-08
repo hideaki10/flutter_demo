@@ -8,6 +8,8 @@ import '01_animate/06/show_animated.dart';
 import '01_animate/07/animated_controller.dart';
 import '01_animate/08/animated_tween.dart';
 import '01_animate/09/curve_tween.dart';
+import '03_async/03/stream_builder.dart';
+import '03_async/04/tape_game.dart';
 import '07_buildcontext/build_contex.dart';
 import 'exercise/06/exercise.dart';
 import 'exercise/08/exercise.dart';
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Temp(),
+      home: TypeGame(),
     );
   }
 }
