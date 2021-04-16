@@ -15,9 +15,11 @@ jobs:
           flutter-version: "2.0.2"
       - name: Get Flutter Package
         run: flutter pub get
+        working-directory: ./flutter_app
 
       - name: Run Flutter Test
         run: flutter test --coverage --coverage-path=~/coverage/lcov.info
+        working-directory: ./flutter_app
 
       - uses: codecov/codecov-action@v1
         with:
