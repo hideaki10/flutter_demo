@@ -29,7 +29,7 @@ class _AnimateButtonState extends State<FontApp> {
           children: [
             SizedBox(
               height: 780,
-              child: _buildBox(),
+              child: BuildBox(),
             ),
             // SizedBox(
             //   height: 300,
@@ -51,8 +51,8 @@ class _AnimateButtonState extends State<FontApp> {
   }
 }
 
-class _buildBox extends StatelessWidget {
-  var watemark = "LGTM";
+class BuildBox extends StatelessWidget {
+  final watemark = "LGTM";
   @override
   Widget build(BuildContext context) {
     return Stack(
