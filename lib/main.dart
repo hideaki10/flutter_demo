@@ -6,6 +6,7 @@ import '03_async/04/tape_game.dart';
 import '07_buildcontext/build_contex.dart';
 import 'exercise/06/exercise.dart';
 import 'exercise/08/exercise.dart';
+import 'exercise/09/exercise.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: TypeGame(),
+      home: FontApp(),
     );
   }
 }
